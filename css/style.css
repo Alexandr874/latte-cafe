@@ -696,11 +696,36 @@ h3 {
     grid-template-columns: 1fr;
     gap: 48px;
   }
+
+  /* подгонки под макет 1440 — на планшете/телефоне не нужны */
+  .menu {
+    margin-top: 0;
+  }
+
+  .gallery {
+    padding-top: var(--section-y);
+  }
+
+  .awards {
+    padding-bottom: var(--section-y);
+  }
 }
 
 @media (max-width: 767px) {
   .socials {
     gap: 12px;
+  }
+
+  .hero {
+    padding-bottom: 16px;
+  }
+
+  .hero__img {
+    aspect-ratio: 4 / 3;
+  }
+
+  .about {
+    padding-block: var(--section-y);
   }
 
   .menu__inner,
@@ -752,5 +777,16 @@ h3 {
 
   .socials__item:first-child {
     display: none;
+  }
+}
+
+@media (max-width: 359px) {
+  .logo__img {
+    width: 150px;
+    height: 17px;
+  }
+
+  .socials {
+    gap: 8px;
   }
 }
