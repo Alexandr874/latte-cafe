@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Latte Cafe — neighbourhood cafe and bar in Wellington</title>
+  <meta name="description" content="Latte Cafe is a local neighbourhood cafe and bar in Te Aro, Wellington. Seasonal menu, local produce and pastries.">
+
+  <link rel="preload" href="fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/azeret-mono-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <button class="header__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+        <span class="header__burger-line"></span>
+      </button>
+
+      <nav class="nav" id="main-nav" aria-label="Main">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#menu">Menu</a></li>
+          <li class="nav__item"><a class="nav__link" href="#info">Info</a></li>
+          <li class="nav__item"><a class="nav__link" href="#booking">Booking</a></li>
+        </ul>
+      </nav>
+
+      <a class="logo" href="/" aria-label="Latte Cafe — home">
+        <img class="logo__img" src="img/logo.svg" width="276" height="32" alt="Latte Cafe">
+      </a>
+
+      <ul class="socials" aria-label="Social links">
+        <li class="socials__item">
+          <a class="socials__link socials__link--mail" href="mailto:hello@lattecafe.example" aria-label="Email">
+            <img class="socials__icon socials__icon--mail" src="img/icons/mail.svg" alt="">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Facebook">
+            <img class="socials__icon socials__icon--facebook" src="img/icons/facebook.svg" alt="">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--instagram" href="#" aria-label="Instagram">
+            <img class="instagram__frame" src="img/icons/instagram-frame.svg" alt="">
+            <img class="instagram__lens" src="img/icons/instagram-lens.svg" alt="">
+            <img class="instagram__dot" src="img/icons/instagram-dot.svg" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Latte Cafe interior">
+      <div class="container">
+        <img class="hero__img" src="img/hero.png" width="1328" height="644"
+             alt="Latte Cafe interior with blue leather booth and round tables" fetchpriority="high">
+      </div>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="container about__inner">
+        <h2 class="label about__label" id="about-title">About Us</h2>
+        <p class="lead about__text">
+          Tucked away in the corner of Wellington, <em>Latte Cafe</em> is a local neighbourhood cafe and bar.
+          Latte is all about doing what we love, in a city that we love. We keep stocked with local produce
+          and pastries. Bring your family for a bite, or meet your friends for a coffee or warm drink.
+        </p>
+      </div>
+    </section>
+
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="container menu__inner">
+        <div class="menu__content">
+          <h2 class="label menu__label" id="menu-title">Menu</h2>
+          <p class="lead menu__text">We change our menu every season. Here is what we are currently dishing up.</p>
+
+          <ul class="menu__links">
+            <li><a class="btn btn--active" href="#" aria-current="page">Food Menu</a></li>
+            <li><a class="btn" href="#">Drinks Menu</a></li>
+            <li><a class="btn" href="#">Takeaway Menu</a></li>
+          </ul>
+        </div>
+
+        <img class="menu__img" src="img/menu.png" width="664" height="1037" loading="lazy"
+             alt="Latte Cafe seasonal menu: entrées and mains">
+      </div>
+    </section>
+
+    <section class="info" id="info" aria-label="Location and opening hours">
+      <div class="container info__inner">
+        <div class="info__col">
+          <h2 class="label info__label">Location</h2>
+          <address class="info__text">101 Cuba St,<br>Te Aro, Wellington</address>
+        </div>
+
+        <div class="info__col">
+          <h2 class="label info__label">Hours</h2>
+          <dl class="hours">
+            <div class="hours__group">
+              <dt class="info__text">Tuesday to Friday</dt>
+              <dd class="info__text"><time datetime="07:00">7AM</time> - <time datetime="15:00">3PM</time></dd>
+            </div>
+            <div class="hours__group">
+              <dt class="info__text">Saturday to Sunday</dt>
+              <dd class="info__text"><time datetime="08:00">8AM</time> - <time datetime="15:00">3PM</time></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="info__col">
+          <h2 class="label info__label">Mondays?</h2>
+          <p class="info__text info__text--narrow">We are closed on Mondays to reflect and refuel</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Photo gallery">
+      <div class="container gallery__inner">
+        <img class="gallery__img gallery__img--1" src="img/gallery-1.png" width="644" height="300" loading="lazy"
+             alt="Bottles on the bar shelves">
+        <img class="gallery__img gallery__img--2" src="img/gallery-2.png" width="644" height="300" loading="lazy"
+             alt="A plated dish being served">
+        <img class="gallery__img gallery__img--3" src="img/gallery-3.png" width="644" height="640" loading="lazy"
+             alt="Cafe dining room with tables by the window">
+      </div>
+    </section>
+
+    <section class="awards" id="booking" aria-labelledby="awards-title">
+      <div class="container awards__inner">
+        <h2 class="awards__title" id="awards-title">Award winning cafe and bar.</h2>
+        <p class="awards__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <nav class="footer__nav" aria-label="Footer">
+        <ul class="footer__list">
+          <li><a class="footer__link" href="/">Home</a></li>
+          <li><a class="footer__link" href="#about">About</a></li>
+          <li><a class="footer__link" href="#menu">Menu</a></li>
+          <li><a class="footer__link" href="#info">Info</a></li>
+          <li><a class="footer__link" href="#">Contact</a></li>
+          <li><a class="footer__link" href="#booking">Bookings</a></li>
+          <li><a class="footer__link" href="#">Privacy Policy</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li><a class="footer__link" href="#">Style Guide</a></li>
+          <li><a class="footer__link" href="#">Licenses</a></li>
+          <li><a class="footer__link" href="#">Instructions</a></li>
+          <li><a class="footer__link" href="#">Changelog</a></li>
+          <li><a class="footer__link" href="#">Password</a></li>
+          <li><a class="footer__link" href="#">404</a></li>
+        </ul>
+      </nav>
+
+      <ul class="credits">
+        <li>© Latte Cafe 2022.</li>
+        <li>Built by <a class="credits__link" href="#">Nikolai Bain</a>.</li>
+        <li>Powered by <a class="credits__link credits__link--small" href="#">Webflow</a>.</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
